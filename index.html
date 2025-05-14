@@ -8,14 +8,14 @@
       margin: 0;
       padding: 0;
       height: 100%;
-      background: #1e1e1e;
+      background: #191919;
       font-family: sans-serif;
       overflow: hidden;
     }
 
     #tabs {
       display: flex;
-      background: #2c2c2c;
+      background: #191919;
       color: white;
       padding: 0 10px;
       align-items: center;
@@ -26,7 +26,7 @@
       display: flex;
       align-items: center;
       padding: 6px 10px;
-      background: #3c3c3c;
+      background: #191919;
       margin-right: 4px;
       border-radius: 8px 8px 0 0;
       cursor: pointer;
@@ -35,7 +35,7 @@
     }
 
     .tab.active {
-      background: #444;
+      background: #191919;
     }
 
     .tab .icon {
@@ -101,7 +101,7 @@
       let editors = [];
       let tabCount = 0;
 
-      function createTab(filename = `script${++tabCount}.lua`, code = "-- Lua script\nprint(\"Hello Lua\")") {
+      function createTab(filename = `script${++tabCount}.lua`, code = "-- Start coding") {
         const tab = document.createElement("div");
         tab.className = "tab";
 
